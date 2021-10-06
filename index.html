@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ImersãoDev</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./src/assets/img/logoBranco.png" alt="logo">
+        <ul class="nav_links">
+            <li><a href="#agendar"><button id="agendarbtn">Agendar</button></a></li>
+
+        </ul>
+    </header>
+    <main>
+        <section class="informativo">
+            <article>
+                <h1>IMPORTANTE</h1>
+                <h3>Antes de agendar sua volta ao escritório você precisa saber!</h3>
+                <span>Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto não foi uma opção, mas sim necessário e assim se foram
+                quase 2 anos de home office. Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, e aqui
+                na <strong style="color: #EF653B; font: 18px;"> FCamara</strong> não é diferente, com muito cuidado e segurança estamos planejando a reabertura da nossa empresa. Estamos
+                muito felizes com essa novidade, mas sabemos que não será como antes, portanto voltar aos escritórios é algo opcional!,
+                se você ainda não se sente à vontade para ir, ou mora fora das regiões onde estão os escritórios, poderá permanecer em
+                casa. Segurança em primeiro lugar!, mas se bater a saudade você pode agendar o dia que poderá trabalhar no escritório, e
+                lembre-se respeite as regrinhas tá!
+                </span>
+                <h3>Siga as Regras</h3>
+                <p>
+                    1º Será medida a temperatura ao chegar no escritório.<br>
+                    2º Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios.
+                    Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.<br>
+                    3º Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam
+                    em casa.</br>
+                    Os escritórios só podem comportar até 40% dos consultores, conforme a legislação, portanto nada de aglomerar.
+
+                </p>
+            </article>
+        </section>
+
+        <section class="agendamento" id="#agendar">
+            <h1>AGENDAMENTO</h1>
+            <form action="/agendar.js" method="post">
+                <div class="boxform">
+                    <input type="text" id="nome" placeholder=" Consultor" />
+                </div>
+                <div class="boxform">
+                    <input type="email" id="email" placeholder=" Email" />
+                </div>
+                <h3>SELECIONE O ESCRITÓRIO</h3>
+                <div class="selectesc">
+                    <label for="santos">Santos</label>
+                    <input type="radio" id="santos" name="santos" value="Santos">
+                    <label for="saopaulo">São Paulo</label>
+                    <input type="radio" id="saopaulo" name="sãopaulo" value="São Paulo">
+                    
+                </div>
+                <div class="boxform">
+                    <input type="date" id="data">
+                </div>
+                <div class="button">
+                    <button type="submit">Agendar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
