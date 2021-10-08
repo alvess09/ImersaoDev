@@ -47,5 +47,152 @@ header {
     
 }
 .nav_links li, a:hover {
-    color: #fffff;
+    color: #ffff;
+}
+
+/* style main */
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    /* -> Used Trics for reader pages on listen google <- */
+    margin:  -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color:var(--dark-blue);
+    font-weight: normal;
+    text-align: center;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--light-green);
+}
+button {
+    width: 100%;
+    height: 50px;
+    border:none;
+    color: white;
+    background: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    
+}
+button:hover{
+    background: var(--green);
+}
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+.button.cancel{
+    color: var(--red-apple);
+    border: 2px var(--red-apple) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+.button.cancel:hover{
+    background: var(--red-apple);
+}
+
+
+
+
+/* mobile style*/
+@media (max-width: 360px) {
+    html{
+        font-size: 87.5%;
+    }
+    header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        left: 30px;
+        background-color: orchid;
+    }
+    .logo {
+        position: relative;
+        width: 200px;
+        height: 80px;
+        left: 15%;
+        top: -25%;
+    }
+    li, a #agendarbtn {
+        display: inline-block;
+        position: absolute;
+        padding: 15px 30px;
+        width: 50px;
+        height: 50px;
+        top: 70%;
+        right: 10%;
+        border-radius: 250px 250px;  
+        align-items: right;
+        font-size: 18px;
+    }
+
+
+
+
+
+}
+
+/* tablet style*/
+@media (max-width: 768px) {
+    html{
+        font-size: 87.5%;
+    }
+    header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        left: 30px;
+        background-color: orchid;
+    }
+    .logo {
+        position: relative;
+        width: 200px;
+        height: 80px;
+        left: 15%;
+        top: -25%;
+    }
+    li, a #agendarbtn {
+        display: inline-block;
+        position: absolute;
+        padding: 15px 30px;
+        width: 50px;
+        height: 50px;
+        top: 70%;
+        right: 10%;
+        border-radius: 250px 250px;  
+        align-items: right;
+        font-size: 18px;
+    }
+
+
+
+
+
 }

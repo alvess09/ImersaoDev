@@ -10,14 +10,68 @@
 </head>
 
 <body>
+    
     <header>
         <img class="logo" src="./src/assets/img/logoBranco.png" alt="logo">
         <ul class="nav_links">
-            <li><a href="#agendar"><button id="agendarbtn">Agendar</button></a></li>
-
+            <li><a href="#" onclick="Modal.open()"><button id="agendarbtn">Agendar</button></a></li>
         </ul>
     </header>
-    <main>
+    <main class="container">
+
+          <!-- inserção do Modal -->
+          <div class="modal-overlay ">
+            <div class="modal">
+                <div class="form">
+                    <h2>AGENDAMENTO</h2>
+                    <form action="">
+    
+                        <div class="input-group"><input type="text" 
+                            id="nome"
+                            name="nome"
+                            placeholder="Consultor"
+                            />
+                        </div>
+                        <div class="input-group">
+                            <input type="email" 
+                            id="email"
+                            name="email"
+                            placeholder="email@fcamara.com"
+                            />
+                        </div>
+                        <h2>Selecione o escritório</h2>
+                        <div class="input-group">
+                            <input type="radio" 
+                            id="santos"
+                            name="santos"
+                            placeholder="Santos"
+                            /> Santos
+                            <input type="radio" 
+                            id="santos"
+                            name="santos"
+                            placeholder="Santos"
+                            /> São Paulo
+                        </div>
+    
+                        <div class="input-group">
+                            <label  class="sr-only" for="date">
+                                Data
+                            </label>
+                            <input type="date" 
+                            id="data"
+                            name="data" 
+                            />
+                        </div>
+    
+                        <div class="input-group actions">
+                            <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+                            <button>Salvar</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
         <section class="informativo">
             <article>
                 <h1>IMPORTANTE</h1>
@@ -42,33 +96,32 @@
                 </p>
             </article>
         </section>
+          
 
-        <section class="agendamento" id="#agendar">
+
+        <!-- <section class="agendamento" id="#agendar">
             <h1>AGENDAMENTO</h1>
-            <form action="/agendar.js" method="post">
-                <div class="boxform">
+            <form action="">
                     <input type="text" id="nome" placeholder=" Consultor" />
-                </div>
-                <div class="boxform">
                     <input type="email" id="email" placeholder=" Email" />
-                </div>
-                <h3>SELECIONE O ESCRITÓRIO</h3>
-                <div class="selectesc">
-                    <label for="santos">Santos</label>
-                    <input type="radio" id="santos" name="santos" value="Santos">
-                    <label for="saopaulo">São Paulo</label>
-                    <input type="radio" id="saopaulo" name="sãopaulo" value="São Paulo">
-                    
-                </div>
-                <div class="boxform">
+                    <h3>SELECIONE O ESCRITÓRIO</h3>
+                    <input type="radio" id="santos" name="escritorio" value="Santos"> Santos
+                    <input type="radio" id="saopaulo" name="escritorio" value="São Paulo"> São Paulo
                     <input type="date" id="data">
-                </div>
-                <div class="button">
-                    <button type="submit">Agendar</button>
-                </div>
+                    <input onclick="gravarDados()" type="submit" id="Enviar" placeholder="Agendar">
+
             </form>
-        </section>
+        </section> -->
     </main>
+    <footer>
+        <div class="footer">
+            <img class="logofooter" src="/src/assets/img/logoRodape.png" alt="fcamara">
+            <img class="logofooter" src="/src/assets/img/alura-logo.svg" alt="alura">      
+        </div>
+        <h3>Transformação cultural, digital e cognitiva</h3>
+    </footer>
+    <script src="./scripts.js" >
+    </script>
 </body>
 
 </html>
